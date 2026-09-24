@@ -21,12 +21,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
+        fontFamily: 'nunito',
       ),
       initialRoute: '/',
       routes: {
         '/': (context) => const SplashScreen(),
         '/loading': (context) => const LoadingScreen(),
-        '/home': (context) => HomePage(),
+        '/home': (context) => const HomePage(),
         '/sign-in': (context) => const SignInPage(),
         '/sign-up': (context) => const SignUpPage(),
       },
